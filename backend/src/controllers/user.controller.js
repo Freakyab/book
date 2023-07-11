@@ -11,7 +11,7 @@ router.get('/',async (req,res)=>{
 })
 
 router.post('/createUser',async(req,res)=>{
-    console.log("reuest came",req.body);
+    console.log("request came",req.body);
     let createdUser = await User.create(req.body);
     res.status(201).send(createdUser);
 })

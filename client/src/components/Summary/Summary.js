@@ -27,6 +27,7 @@ function Summary() {
             let resp = await data.json();
             setBookingData(resp);
             console.log({ bookingData });
+            
         }).catch((e) => {
 
             console.log("Error", e);

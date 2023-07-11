@@ -163,7 +163,7 @@ export const Book = () => {
             <div className='row cast-section'>
                 <h1 className='text-start mb-4'>Crew</h1>
                 {movies.map((item) => (
-                    <Bookcrew item={item.crew} key={nanoid(5)} key={nanoid(5)} />
+                    <Bookcrew item={item.crew} key={nanoid(5)}  />
                 ))}
             </div>
 
@@ -174,7 +174,7 @@ export const Book = () => {
                 <p className='mt-2'>Summary of 10.6K reviews</p>
                 <div className='row'>
                     {arr.map((item) => (
-                        <div className='col me-2 pt-2  top-review-col' key={nanoid(4)} style={{ paddingLeft: "30px" }} key={nanoid(5)}>
+                        <div className='col me-2 pt-2  top-review-col' style={{ paddingLeft: "30px" }} key={nanoid(5)}>
                             <span className='me-4' style={{ color: "#E94362" }}>{item.text}</span><span className='text-end '>{item.id}</span>
                         </div>
                     ))}
